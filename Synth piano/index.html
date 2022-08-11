@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Piano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <ul id="keyboard">
+        <div class="dropdown">
+            <button id="hideB" class="dropbtn">Select Song Notes &nbsp; ▽</button>
+            <div class="dropdown-content">
+                <button id="demo1" class="btnConfig">Happy Birthday </button>
+                <button id="demo2" class="btnConfig">Twinkle Star </button>
+                <button id="demo3" class="btnConfig">Jingle Bells </button>
+                <button id="demo4" class="btnConfig">Ring Around The Rosie </button>
+            </div>
+        </div>
+        <div class="notes1">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;S&nbsp;D&nbsp;|&nbsp;S&nbsp;|&nbsp;G&nbsp;|&nbsp;F&nbsp;|&nbsp;S&nbsp;S&nbsp;D&nbsp;|&nbsp;S&nbsp;|&nbsp;H&nbsp;|&nbsp;G&nbsp;|&nbsp;S&nbsp;S&nbsp;L&nbsp;|&nbsp;J&nbsp;|&nbsp;G&nbsp;|&nbsp;F&nbsp;|&nbsp;D&nbsp;|&nbsp;J&nbsp;J&nbsp;J&nbsp;|&nbsp;G&nbsp;|&nbsp;H&nbsp;|&nbsp;G&nbsp;</p>
+        </div>
+        <div class="notes2">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;A&nbsp;G&nbsp;G&nbsp;H&nbsp;H&nbsp;G&nbsp;|&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;S&nbsp;S&nbsp;A&nbsp;|&nbsp;G&nbsp;G&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;S&nbsp;|&nbsp;G&nbsp;G&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;S&nbsp;|&nbsp;A&nbsp;A&nbsp;G&nbsp;G&nbsp;H&nbsp;H&nbsp;G&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;S&nbsp;S&nbsp;A</p>
+        </div>
+        <div class="notes3">
+            <p>D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;G&nbsp;A&nbsp;S&nbsp;D&nbsp;|&nbsp;F&nbsp;F&nbsp;F&nbsp;|&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;S&nbsp;S&nbsp;D&nbsp;[&nbsp;DG&nbsp;]&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;G&nbsp;A&nbsp;S&nbsp;D&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;F&nbsp;F&nbsp;|&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;&nbsp;|&nbsp;G&nbsp;G&nbsp;F&nbsp;S&nbsp;A&nbsp;</p>
+        </div>
+        <div class="notes3">
+            <p>D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;G&nbsp;A&nbsp;S&nbsp;D&nbsp;|&nbsp;F&nbsp;F&nbsp;F&nbsp;|&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;S&nbsp;S&nbsp;D&nbsp;[&nbsp;DG&nbsp;]&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;D&nbsp;D&nbsp;|&nbsp;D&nbsp;G&nbsp;A&nbsp;S&nbsp;D&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;F&nbsp;F&nbsp;|&nbsp;F&nbsp;F&nbsp;D&nbsp;D&nbsp;&nbsp;|&nbsp;G&nbsp;G&nbsp;F&nbsp;S&nbsp;A&nbsp;</p>
+        </div>
+        <div class="notes4">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;G&nbsp;D&nbsp;H&nbsp;G&nbsp;D&nbsp;|&nbsp;F&nbsp;G&nbsp;G&nbsp;D&nbsp;H&nbsp;G&nbsp;D&nbsp;|&nbsp;G&nbsp;|&nbsp;D&nbsp;|&nbsp;G&nbsp;|&nbsp;D&nbsp;|&nbsp;F&nbsp;G&nbsp;|&nbsp;G&nbsp;|&nbsp;A</p>
+        </div>
+        <li note="C" class="white">A</li>
+        <li note="C#" class="black">W</li>
+        <li note="D" class="white offset">S</li>
+        <li note="D#" class="black">E</li>
+        <li note="E" class="white offset">D</li>
+        <li note="F" class="white">F</li>
+        <li note="F#" class="black">T</li>
+        <li note="G" class="white offset">G</li>
+        <li note="G#" class="black">Y</li>
+        <li note="A" class="white offset">H</li>
+        <li note="A#" class="black">U</li>
+        <li note="B" class="white offset">J</li>
+        <li note="C2" class="white">K</li>
+        <li note="C#2" class="black">O</li>
+        <li note="D2" class="white offset">L</li>
+        <li note="D#2" class="black">P</li>
+        <li note="E2" class="white offset">;</li>
+    </ul>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#demo1").click(function () {
+            $(".notes1").show();
+        });
+        $(".dropbtn").click(function () {
+            $(".notes1").hide();
+        });
+        $("#demo2").click(function () {
+            $(".notes2").show();
+        });
+        $(".dropbtn").click(function () {
+            $(".notes2").hide();
+        });
+        $("#demo3").click(function () {
+            $(".notes3").show();
+        });
+        $(".dropbtn").click(function () {
+            $(".notes3").hide();
+        });
+        $("#demo4").click(function () {
+            $(".notes4").show();
+        });
+        $(".dropbtn").click(function () {
+            $(".notes4").hide();
+        });
+        
+        $(".dropbtn").click(function () {
+            $(".dropdown-content").show();
+        });
+        $("#demo1").click(function () {
+            $(".dropdown-content").hide();
+        });
+        $("#demo2").click(function () {
+            $(".dropdown-content").hide();
+        });
+        $("#demo3").click(function () {
+            $(".dropdown-content").hide();
+        });
+        $("#demo4").click(function () {
+            $(".dropdown-content").hide();
+        });
+    });
+</script>
+<script type="text/javascript" src="script.js"></script>
